@@ -1,20 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: left;
+    text-align: center; /* Center-aligns all text within the body */
     padding: 50px;
 }
+
+.content {
+    display: inline-block; /* Shrinks the content width to fit its children */
+    text-align: center; /* Ensures child elements are centered */
+}
+
 h1 {
     font-size: 50px;
     color: #333;
 }
+
 p {
     font-size: 20px;
     color: #666;
 }
+
 a {
     color: #007BFF;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
+}
+
+.left-align {
+    text-align: left; /* Overrides the body's center alignment for this list */
+    margin: 0 auto; /* Centers the list container itself */
+    display: inline-block; /* Shrinks the list width to fit its content */
 }
