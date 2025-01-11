@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center; /* Center-aligns all text within the body */
+    text-align: center; /* Center-aligns the main content */
     padding: 50px;
 }
 
 .content {
-    display: inline-block; /* Shrinks the content width to fit its children */
-    text-align: center; /* Ensures child elements are centered */
+    display: inline-block; /* Keeps the content block centered horizontally */
+    text-align: center; /* Ensures child elements are center-aligned, except where overridden */
 }
 
 h1 {
@@ -28,8 +28,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.left-align {
-    text-align: left; /* Overrides the body's center alignment for this list */
-    margin: 0 auto; /* Centers the list container itself */
-    display: inline-block; /* Shrinks the list width to fit its content */
+ul {
+    list-style: none; /* Removes bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    text-align: left; /* Ensures the content inside the list is left-aligned */
+    display: block; /* Ensures the list behaves as a block element */
+}
+
+li {
+    margin-bottom: 10px; /* Adds spacing between list items */
 }
